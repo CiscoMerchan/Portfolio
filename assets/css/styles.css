@@ -11,7 +11,32 @@ h3,
 h4{
     font-family:"Raleway", sans-serif;
 }
-
+p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #45505b;
+    font-family: "Raleway", sans-serif;
+  }
+  section {
+    padding: 5px 2px;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    color: grey;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+  }
 /* navbar */
 .nav-title{
     margin-left: 20px;
@@ -55,3 +80,79 @@ img {
     white-space: nowrap; /* prevent the text from wrapping */
     overflow: hidden; /* hide the overflow of the text */
   }
+  @media screen and (max-width: 600px){
+    p{
+        font-size: 12px;
+    }
+    .name{
+        display: block;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: -420px;
+    }
+    img {
+        position: relative;
+        display: inline-block;
+        margin: 80px 30px 0;
+        width: 300px;
+        height: 350px;
+        
+    }
+  }
+
+   /* About */
+   #about{
+    margin: 60px 100px;
+  }
+  .about, .more-about{
+    margin: 0 10%;
+    font-weight: 500;
+    font-size: 16px;
+    color: #45505b;
+    font-family: "Raleway", sans-serif;
+    text-align: justify;
+  }
+ 
+  .more-about {
+    display: none;
+    
+}
+.more-about--visible {
+    display: block;
+    margin-bottom: 50px;
+  }
+  
+  @media screen and (max-width: 600px){
+    #about{
+        
+        margin: 20px 10px;
+      }
+  }
+  
+  
+  
+  
+  
+ /* Resume */
+ #resume-btn {
+    background-color: #BDCDD6;
+    color: #45505b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 420px;
+    border: 3px solid;
+  }
+  
+  #resume-btn:hover {
+    background-color: #0062cc;
+  }
+  @media screen and (max-width: 600px){
+    #resume-btn{
+        margin: 40px ;
+        margin-left: 80px;
+    }
+  }
+
+  /* END About */
