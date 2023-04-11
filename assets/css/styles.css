@@ -1,5 +1,15 @@
 body{
-    background-color: aqua;
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+    background-color:#BDCDD6 ;
+    margin: 0px;
+    z-index: -1;
+}
+h1,
+h2,
+h3,
+h4{
+    font-family:"Raleway", sans-serif;
 }
 
 /* navbar */
@@ -14,3 +24,34 @@ body{
     font-family:"Raleway", sans-serif;
     font-weight: 500;
 }
+
+/* Home */
+.image{
+    position: relative;
+    display: inline-block; 
+}
+
+img {
+    position: relative;
+    display: inline-block;
+    margin: 50px 150px;
+    width: 280px;
+    height: 350px;
+    border: solid 3px;
+    border-radius: 15%;
+    border-color:  blue ;
+}
+
+.name{
+    display: inline-block;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 300px;
+}
+/* typing effect */
+#typing-effect {
+    border-right: 0.1em solid #000; /* create the blinking cursor */
+    font-family: monospace; /* use a monospace font for a typewriter look */
+    white-space: nowrap; /* prevent the text from wrapping */
+    overflow: hidden; /* hide the overflow of the text */
+  }
