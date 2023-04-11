@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+}
+
+/* navbar */
+.nav-title{
+    margin-left: 20px;
+    font-family:"Raleway", sans-serif;
+    font-weight: 800;
+    
+}
+.nav-items{
+    margin-right: 25px;
+    font-family:"Raleway", sans-serif;
+    font-weight: 500;
+}
