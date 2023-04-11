@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CiscoDev</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -118,74 +115,228 @@
 
     <!-- Skills -->
     <section id="skills">
-        <section id="skill">
-            <div class="section-title">
-                <h2>Tech Skills</h2>
-            </div>
-            <div class="row skills">
-                 <div class="col-lg-3"> <!--col-lg-3--> 
+        
+        <div class="section-title">
+            <h2>Tech Skills</h2>
+        </div>
+        <!-- <div class="w-skill"> -->
+            <div class="row skills med">
+                 <div class="col-lg-3 col-sm-12 "> <!--col-lg-3--> 
     
                     <!-- test -->
-                    <div class="ball">
-                        <img class="" src="assets/image/skill_img/python (4).png" alt="python-icon">
+                    <div class="ball ">
+                        <img class="ball_img" src="assets/image/skill_img/python (4).png" alt="python-icon">
                     </div>
     
                 </div>
-                <div class="col-lg-3">
-    
-                    <div class="ball">
-                        <img src="assets/image/skill_img/html-5 (1).png" alt="html-icon">
-                    </div>
-    
-                </div>
-                <div class="col-lg-3">
-    
-                    <div class="ball">
-                        <img src="assets/image/skill_img/css.png" alt="css-icon">
-                    </div>
-    
-                </div>
-    
-                <div class="col-lg-3">
+                <div class="col-lg-3 ">
     
                     <div class="ball ">
+                        <img class="ball_img" src="assets/image/skill_img/html-5 (1).png" alt="html-icon">
+                    </div>
+    
+                </div>
+                <div class="col-lg-3 ">
+    
+                    <div class="ball ">
+                        <img class="ball_img" src="assets/image/skill_img/css.png" alt="css-icon">
+                    </div>
+    
+                </div>
+    
+                <div class="col-lg-3 ">
+    
+                    <div class="ball  ">
                         <img class="dj" src="assets/image/skill_img/django96.png" alt="dj-icon">
                     </div>
     
                 </div>
             </div>
-            <div class="row skills postgres">
+            <div class="row skills postgres med">
     
-                <div class="col-lg-4">
+                <div class="col-lg-4 ">
                     <div class="ball ">
-                        <img src="assets/image/skill_img/postgre.png" alt="postgres-icon">
+                        <img class="ball_img" src="assets/image/skill_img/postgre.png" alt="postgres-icon">
                     </div>
     
                 </div>
     
-                <div class="col-lg-4">
+                <div class="col-lg-4 ">
     
-                    <div class="ball">
-                        <img src="assets/image/skill_img/java-script.png" alt="js-icon">
+                    <div class="ball ">
+                        <img class="ball_img" src="assets/image/skill_img/java-script.png" alt="js-icon">
                     </div>
     
                 </div>
     
-                <div class="col-lg-4">
+                <div class="col-lg-4 ">
     
-                    <div class="ball">
-                        <img src="assets/image/skill_img/icons8-flask-96.png" alt="flask-icon">
+                    <div class="ball ">
+                        <img class="ball_img" src="assets/image/skill_img/icons8-flask-96.png" alt="flask-icon">
                     </div>
     
                 </div>
     
             </div>
-    
+        <!-- </div>     -->
 
     </section>
     <!-- End Skills -->
 
     <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="section-title ">
+            <h2>Portfolio</h2>
+            <p class="portfolio-marging p-media port">Welcome to my portfolio! As a self-taught web developer,
+                I'm passionate about creating user-friendly, visually appealing websites that are
+                both functional and efficient. I have experience with HTML, CSS, JavaScript, Flask,
+                Python, and Tkinter, and enjoy exploring new frameworks and technologies to enhance
+                my skills. In my portfolio, you'll find examples of my work on a range of projects,
+                from simple static sites to more complex web applications. I'm dedicated to delivering
+                high-quality work that meets client needs and exceeds expectations. If you're looking
+                for a passionate and motivated web developer to join your team, I'm excited to discuss
+                potential opportunities with you.</p>
+
+        </div>
+
+        <div class="row portfolio-container">
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>App 1</h4>
+                        <p>App</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/noughtsaAndCrosses.png" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="tictac/tictacteo.html" class="portfolio-details-lightbox"
+                                data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item portfolio_marging">
+                <div class="portfolio-wrap">
+                    <img src="assets/image/portfolio/noughtsaAndCrosses.png" class="img-port" alt="">
+                    <div class="portfolio-info portfolio_padding">
+                        
+                        <h4 class="h4_portfolio">Noughts & Crosses game</h4>
+                        <p class="p_portfolio toggle">This game was created to help me practice JavaScript and manipulate the DOM 
+                            while honing my vanilla JavaScript skills in rendering dynamic page interactions 
+                            without altering the browser by activating and deactivating CSS codes. Overall,
+                            the project allowed me to develop my skills while creating an engaging and interactive
+                            game.</p>
+                        <div class="portfolio-links">
+                            
+                            <a href="#" class="portfolio-toggle" title="Portfolio Details"><i class="fas fa-plus"></i></a>
+                            <a href="https://github.com/CiscoMerchan/Noughts_and_Crosses" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Noughts and Crosses"><i class="fab fa-github"></i></a>
+                            <a href="https://ciscomerchan.github.io/Noughts_and_Crosses/" target="_blank" class="portfolio-details-lightbox" data-glightbox="type: external" title="web online"><i class="fas fa-link"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item portfolio_marging">
+                <div class="portfolio-wrap">
+                    <img src="assets/image/portfolio/coffeewifi1.png" class="img-port" alt="">
+                    <div class="portfolio-info portfolio_padding">
+                        <h4 class="h4_portfolio">App 2</h4>
+                        <p p_portfolio toggle>App</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-toggle" title="Portfolio Details"><i class="fas fa-plus"></i></a>
+                            <a href="assets/img/portfolio/coffeewifi1.png" target="_blank" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                            <a href="https://github.com/CiscoMerchan/COFFEE_WIFI" target="_blank"class="portfolio-details-lightbox"
+                                data-glightbox="type: external" title="Portfolio Details"><i class="fab fa-github"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+<!--  -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item portfolio_marging">
+                <div class="portfolio-wrap">
+                    <img src="assets/image/portfolio/numeros.png" class="img-port" alt="">
+                    <div class="portfolio-info portfolio_padding">
+                        <h4 class="h4_portfolio">Numbers in spanish</h4>
+                        <p class="p_portfolio toggle">"The Numbers in Spanish" was created as a helpful tool for my daughter to learn 
+                            and practice the numbers 1 to 10 in Spanish. Built using JavaScript and jQuery,
+                            this web application features interactive animations and audio playback for each
+                            number to engage and reinforce learning. With keyboard support, the application is
+                            designed to be simple and user-friendly. In addition to helping my daughter learn 
+                            Spanish, the project was created with the goal of practicing and understanding basic
+                            concepts of JavaScript and jQuery, including event listeners, DOM interaction,
+                            and writing DRY code using functions.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-toggle" title="Portfolio Details"><i class="fas fa-plus"></i></a>
+                            <a href="https://github.com/CiscoMerchan/numbers_in_spanish" target="_blank" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="numbers_in_spanish"><i class="fab fa-github"></i></a>
+                            <a href="https://ciscomerchan.github.io/numbers_in_spanish/" target="_blank" class="portfolio-details-lightbox"
+                                data-glightbox="type: external" title="web online"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item portfolio_marging">
+                <div class="portfolio-wrap">
+                    <img src="assets/image/portfolio/dashboard.png" class="img-port" alt="">
+                    <div class="portfolio-info portfolio_padding">
+                        <h4 class="h4_portfolio">Inventory</h4>
+                        <div class="div_portfolio">
+                            <p class="p_portfolio toggle ">The Inventory Web Application is a Python and Django-based web tool
+                                for managing inventory. Users can create, edit, and delete suppliers, 
+                                products, purchase orders, clients, and client orders. I initially developed 
+                                a desktop app with Python and Tkinter but faced difficulties converting it to an
+                                executable file. I recreated it as a web app to deepen my understanding of the
+                                Django framework and found it easier to work with compared to Flask. I'm happy
+                                with the project's outcome and what I learned.</p>
+                        </div>
+                        
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-toggle" title="Portfolio Details"><i class="fas fa-plus"></i></a>
+                            <a href="https://github.com/CiscoMerchan/Inventory_with_django" target="_blank" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="Inventory with Django"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/CiscoMerchan/Inventory_with_django" target="_blank" class="portfolio-details-lightbox"
+                                data-glightbox="type: external" title=""><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item portfolio_marging">
+                <div class="portfolio-wrap">
+                    <img src="assets/image/portfolio/quizzapp.png" class="img-port" alt="">
+                    <div class="portfolio-info portfolio_padding">
+                        <h4 class="h4_portfolio">QuizApp</h4>
+                        <p class="p_portfolio toggle">The Quiz App is a JavaScript-based web app created for a friend who 
+                            enjoys quizzes. It fetches trivia questions and answers from an external
+                            API and checks user-selected answers for correctness. It also features event
+                            listeners for buttons, audio feedback for correct and incorrect answers, and 
+                            score management functions. The project was developed to improve JavaScript skills 
+                            and learn about using external APIs, while also practicing app functionality and 
+                            understanding the app workflow and lifecycle.</p>
+                        <div class="portfolio-links">
+                            <a href="" class="portfolio-toggle" title="Portfolio Details"><i class="fas fa-plus"></i></a>
+                            <a href="https://github.com/CiscoMerchan/Joel-Quiz_app" target="_blank" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="Quiz_app"><i class="fab fa-github"></i></a>
+                            <a href="https://ciscomerchan.github.io/Joel-Quiz_app" target="_blank" class="portfolio-details-lightbox"
+                                data-glightbox="type: external" title="web online"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+<!--  -->
+            
+            
+           
+
+        </div>
+
+    </section>
     <!-- End Portfolio -->
 
     <!-- Contact -->
@@ -193,7 +344,13 @@
 
     <!-- Footer -->
     <!-- End Footer -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c93be1069d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <!-- JS -->
     <script src="assets/js/index.js" charset="UTF-8"></script>
 </body>
 

@@ -218,8 +218,9 @@ p{
   @media only screen and (max-width: 500px) {
     .ball {
       animation: float 4.5s ease-in-out infinite;
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
+      margin: 15px;
   
       background: radial-gradient(
         circle at 65% 35%,
@@ -251,8 +252,52 @@ p{
       }
     }
   }
-  
+  @media screen and (max-width: 600px){
+    .med{
+        /* display: inline-block; */
+        /* margin: 40%;  */
+        /* margin-left: -200px; */
+    }
+    .ball_img{
+        display: inline-block;
+        width: 25px;
+        height: 25px;        
+    }
+    /* .w-skill{
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+        height: 120px;
+    } */
+    .skills .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
+      }
+      
+      .skills .col-lg-3 {
+        width: 20%;
+        margin-left: -20px;
+        
+      }
+      
+      .skills .col-lg-4 {
+        width: 33.33%;
+      }
+      .skills{
+        margin-right: -80px;
+        margin-top: 10px;
+      }
+      .postgres{
+        /* margin-right: 10px; */
+      }
+      .col-lg-4{
+        margin-left: -20px;
+      }
+    }
+    
 
   /* .ball {
     animation: float 3.5s ease-in-out infinite;
@@ -287,6 +332,72 @@ p{
   .postgres{
     margin-left: 150px;
   }
+
+
+  /* END Skills */
+
+  /* Portfolio */
+
+  .portfolio_marging{
+    margin-left: 150px;
+  }
+  .portfolio_padding{
+    padding: 10px 150px;
+  }
+  
+  .h4_portfolio{
+    margin-left: -150px;
+    width: 400px;
+    text-align: center;
+    color: #45505b;
+  }
+  .p_portfolio {
+    
+    margin-left: -150px;
+    width: 400px;
+    text-align: justify;
+    font-size: 14px;
+    color: darkslategray;
+  }
+  p.toggle {
+    display: none;
+  }
+  p.toggle.visible {
+    display: block;
+  }
+  .img-port{
+    width: 350px;
+    height: 200px;
+    border: #45505b 3px solid;
+  }
+  .port{
+    margin: 0 10%;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #45505b;
+    font-family: "Raleway", sans-serif;
+    text-align: justify;
+  }
+  @media screen and (max-width: 600px){
+    .p-media{
+        margin: 0 20px;
+        text-align: justify;
+    }
+    .portfolio-item{
+        margin-left: -20px;
+    }
+    .img-port{
+        width: 280px;
+        height: 120px;
+        /* justify-content: center; */
+        margin-left:15%; 
+    } 
+    .portfolio-links{
+        width: 80px;
+    }
+  }
+
   
 
   

@@ -41,10 +41,10 @@ button.addEventListener("click", () => {
   document.getElementById('resume-btn').addEventListener('click', function() {
     ga('send', 'event', 'Resume', 'view');
   });
-  // Click on '+' in portfolio and will open the text(<p>)
-//   $(document).ready(function() {
-//     $('.portfolio-toggle').on('click', function(event) {
-//       event.preventDefault(); // prevent default behavior of link
-//       $(this).closest('.portfolio-wrap').find('.toggle').toggleClass('visible');
-//     });
-//   });
+//   Click on '+' in portfolio and will open the text(<p>)
+  $(document).ready(function() {
+    $('.portfolio-toggle').on('click', function(event) {
+      event.preventDefault(); // prevent default behavior of link
+      $(this).closest('.portfolio-wrap').find('.toggle').toggleClass('visible');
+    });
+  });
