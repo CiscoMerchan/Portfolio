@@ -9,7 +9,10 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- Google Fonts -->
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <!-- Google Fonts -->
     <!-- nav-title  nav-items -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -20,27 +23,37 @@
 <body>
     <!-- NAV -->
     <section id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-muted">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand" href="#">Cisco</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="#">Hidden brand</a>
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">Disabled</a>
-                </li>
-              </ul>
-              
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assets/resume/CVCisco2023.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
-
+        </nav>
+        
+        
     </section>
     <!-- END NAV -->
     
@@ -56,6 +69,7 @@
 
                 
             </div>
+           
         </div>
         
     </section>
@@ -65,6 +79,7 @@
     <section id="about">
         <div class="section-title">
             <h2>About</h2>
+            <div class="bar"></div>
         </div>
         <div class="title-section">
             <div>
@@ -104,9 +119,9 @@
                     problems.</p>
             </div>
         </div>
-        <div>
-            <a href="assets/img/resume/CVCisco2023.pdf" target="_blank" id="resume-btn">View Resume</a>
-            <!-- <button id="resume-btn"><a href="assets/img/resume/CVCisco2023.pdf" target="_blank">View Resume</a></button> -->
+        <div class="resume-btn">
+            <a href="assets/resume/CVCisco2023.pdf" target="_blank" id="resume-btn">View Resume</a>
+            
 
         </div>
 
@@ -118,6 +133,7 @@
         
         <div class="section-title">
             <h2>Tech Skills</h2>
+            <div class="bar"></div>
         </div>
         <!-- <div class="w-skill"> -->
             <div class="row skills med">
@@ -187,6 +203,7 @@
     <section id="portfolio">
         <div class="section-title ">
             <h2>Portfolio</h2>
+            <div class="bar"></div>
             <p class="portfolio-marging p-media port">Welcome to my portfolio! As a self-taught web developer,
                 I'm passionate about creating user-friendly, visually appealing websites that are
                 both functional and efficient. I have experience with HTML, CSS, JavaScript, Flask,
@@ -201,21 +218,7 @@
 
         <div class="row portfolio-container">
 
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                            <a href="assets/img/portfolio/noughtsaAndCrosses.png" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                            <a href="tictac/tictacteo.html" class="portfolio-details-lightbox"
-                                data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            
 
             <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item portfolio_marging">
                 <div class="portfolio-wrap">
@@ -223,7 +226,7 @@
                     <div class="portfolio-info portfolio_padding">
                         
                         <h4 class="h4_portfolio">Noughts & Crosses game</h4>
-                        <p class="p_portfolio toggle">This game was created to help me practice JavaScript and manipulate the DOM 
+                        <p class="p_portfolio toggle ">This game was created to help me practice JavaScript and manipulate the DOM 
                             while honing my vanilla JavaScript skills in rendering dynamic page interactions 
                             without altering the browser by activating and deactivating CSS codes. Overall,
                             the project allowed me to develop my skills while creating an engaging and interactive
@@ -346,6 +349,7 @@
 
         <div class="section-title">
             <h2>Contact</h2>
+            <div class="bar"></div>
         </div>
 
         <div class="row mt-1 contact_center">
@@ -361,10 +365,10 @@
                         <h4>Social Profiles</h4>
                         <div class="social-links contact-links">
 
-                            <a href="https://github.com/CiscoMerchan" class="instagram" target="_blank" title="github"
+                            <a href="https://github.com/CiscoMerchan" class="instagram gh_contact" target="_blank" title="github"
                                 rel="noopener noreferrer"><i class="fab fa-github"></i></a>
 
-                            <a href="https://www.linkedin.com/in/ciscomerchan/" class="linkedin" target="_blank"
+                            <a href="https://www.linkedin.com/in/ciscomerchan/" class="linkedin l_contact" target="_blank"
                                 title="linkedin" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
@@ -372,11 +376,12 @@
 
                 <div class="col-md-6 mt-4 d-flex align-items-stretch ">
                     <div class="info-box emailme">
-                        <a href="mailto:franciscoeliasm@yahoo.com" title="myemail"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="mailto:franciscoeliasm@yahoo.com" title="myemail"><i class="envelop fa-regular fa-envelope"></i>
                         <h4>Email Me</h4>
-                        <a href="mailto:franciscoeliasm@yahoo.com">
-                            <p>contact@example.com</p>
                         </a>
+                        <!-- <a href="mailto:franciscoeliasm@yahoo.com">
+                            <p>contact@example.com</p>
+                        </a> -->
                     </div>
                 </div>
 
@@ -396,10 +401,10 @@
           <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
           <div class="social-links">
           
-            <a href="https://github.com/CiscoMerchan" class="github" title="github" target="_blank"
+            <a href="https://github.com/CiscoMerchan" class="github " title="github" target="_blank"
               rel="noopener noreferrer"><i class="fab fa-github"></i></a>
           
-            <a href="https://www.linkedin.com/in/ciscomerchan/" class="linkedin" title="linkedin" target="_blank"
+            <a href="https://www.linkedin.com/in/ciscomerchan/" class="linkedin " title="linkedin" target="_blank"
               rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
           </div>
           <div class="copyright">
@@ -420,6 +425,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
     <!-- JS -->
     <script src="assets/js/index.js" charset="UTF-8"></script>
+    <!--for NAV  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
