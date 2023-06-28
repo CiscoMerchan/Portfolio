@@ -1,7 +1,7 @@
 body{
     font-family: "Open Sans", sans-serif;
-    color: #272829;
-    background-color:#BDCDD6 ;
+    color: #F9F5EB;
+    background-color:#06283D ;
     margin: 0px;
     z-index: -1;
 }
@@ -14,7 +14,7 @@ h4{
 p{
     font-weight: 500;
     font-size: 16px;
-    color: #45505b;
+    color: #F9F5EB;
     font-family: "Raleway", sans-serif;
     line-height: 1.7;
   }
@@ -25,8 +25,9 @@ p{
   
   .section-title {
     text-align: center;
+    letter-spacing: 0.07rem;
    
-    color: grey;
+    color:  #F9F5EB; 
   }
   
   .section-title h2 {
@@ -36,13 +37,13 @@ p{
     margin-bottom: 0px;
     padding-bottom: 20px;
     position: relative;
-    color: #45505b;
+    color:#F9F5EB;
   }
   .bar {
     height: 5px;
-    width: 100px;
+    width: 9rem;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 3rem;
     background: linear-gradient(to right, #626161, #e8f5e8, #45505b);
   }
 /* navbar */
@@ -57,29 +58,45 @@ p{
     font-family:"Raleway", sans-serif;
     font-weight: 500;
 }
-
+.nav-item  .nav-link:hover{
+  background-color: #BDCDD6;
+  color:#F9F5EB;
+  
+}
+@media screen and (max-width: 600px){
+   .nav-link{
+    background-color: #BDCDD6;
+    color:#F9F5EB;
+    
+  }
+}
 /* Home */
+.home{
+  height: 350px;
+  margin: 20px 20px 0 20px;
+}
 .image{
-    position: relative;
+    position: auto;
     display: inline-block; 
+    width: 200px;
+    height: 200px;
 }
 
-.my_pic{
-    position: relative;
-    display: inline-block;
-    margin: 50px 150px;
-    width: 280px;
-    height: 350px;
+ .my_pic{
+ 
+    margin: 50px 180px;
+    width: 100%;
+    height: auto;
     border: solid 3px;
     border-radius: 15%;
-    border-color:  blue ;
+    /* border-color:  blue ; */
 }
 
 .name{
     display: inline-block;
     position: absolute;
-    margin-left: 50px;
-    margin-top: 300px;
+    margin-left: 250px;
+    margin-top: 200px;
 }
 /* typing effect */
 #typing-effect {
@@ -88,22 +105,28 @@ p{
     white-space: nowrap; /* prevent the text from wrapping */
     overflow: hidden; /* hide the overflow of the text */
   }
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 900px){
+    .home{
+      height: 500px;
+    }
     p{
         font-size: 12px;
     }
     .name{
         display: block;
         position: absolute;
-        margin-left: 20px;
-        margin-top: -480px;
+    
+        margin-left: 10px;
+        margin-top: -200px;
     }
-    .my_pic {
+     .image .my_pic {
+        margin-top: 150px ;
+        margin-left: 40px;
         position: relative;
-        display: inline-block;
-        margin: 120px 30px 0;
-        width: 300px;
-        height: 350px;
+        display: flex;
+        justify-content: center;
+        width: 220px;
+        height: auto;
         
     }
   }
@@ -116,7 +139,7 @@ p{
     margin: 0 10%;
     font-weight: 500;
     font-size: 16px;
-    color: #45505b;
+    color: #F0ECE2 ;
     font-family: "Raleway", sans-serif;
     text-align: justify;
   }
@@ -129,7 +152,13 @@ p{
     display: block;
     margin-bottom: 50px;
   }
-  
+.showMore{
+  background-color: #06283D;
+  color: #e8f5e8;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
   @media screen and (max-width: 600px){
     #about{
         
@@ -146,15 +175,19 @@ p{
   
  /* Resume */
  #resume-btn {
-    margin-top: 20px;
-    background-color: #BDCDD6;
-    color: #45505b;
+  
+    display:flex;
+    justify-content: center;
+    
+    
+    background-color: #06283D;
+    color: #BDCDD6;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1.2em;
     cursor: pointer;
-    margin-left: 450px;
-    margin-bottom: 50px;
+    
+    margin: 3Rem 6rem;
     border: 3px solid;
   }
   .resume-btn{
@@ -163,248 +196,218 @@ p{
   }
   
   #resume-btn:hover {
-    background-color: #0062cc;
+    background-color: #BDCDD6;
+    color:#06283D;
+    font-size: 1.4em;
   }
   @media screen and (max-width: 600px){
     #resume-btn{
-        margin: 40px ;
-        margin-left: 80px;
+       
     }
   }
 
   /* END About */
 
   /* Skills */
- 
+
+  /* .section__padding {
+    padding: 4rem 6rem ;
+  } */
   
-  .ball {
-    animation: float 3.5s ease-in-out infinite;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    position: relative;
-  
-    background: radial-gradient(
-      circle at 75% 30%,
-      white 5px,
-      aqua 8%,
-      darkblue 60%,
-      aqua 100%
-    );
-    box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc,
-      inset 88px 0px 60px #c2d8fe, inset -20px -60px 100px #fde9ea,
-      inset 0 50px 140px #fde9ea, 0 0 90px #fff;
-  }
-  
-  @keyframes float {
-    0% {
-      transform: translatey(0px);
-    }
-    50% {
-      transform: translatey(-80px);
-    }
-    100% {
-      transform: translatey(0px);
-    }
-  }
-  
-  .shadow {
-    background: #b490b2;
-    width: 150px;
+  /* // card */
+  .skillCard {
     height: 40px;
-    top: 70%;
-    animation: expand 4s infinite;
-    position: absolute;
-    border-radius: 50%;
+    margin-bottom: 1rem;
   }
-  @keyframes expand {
-    0%,
-    100% {
-      transform: scale(0.5);
-    }
+  .skillCard p{
+    /*font-family: var(--font-family); */
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 26px;
   
-    50% {
-      transform: scale(1);
-    }
+    text-align: center;
+   
   }
   
-  @media only screen and (max-width: 500px) {
-    .ball {
-      animation: float 4.5s ease-in-out infinite;
-      height: 30px;
-      width: 30px;
-      margin: 15px;
+  /* // Skill */
   
-      background: radial-gradient(
-        circle at 65% 35%,
-        white 5px,
-        aqua 15%,
-        darkblue 50%,
-        aqua 100%
-      );
-      box-shadow: inset 0 -20px 30px #fff, inset 40px 0 46px #eaf5fc,
-        inset 58px 0px 60px #c2d8fe, inset -8px -30px 100px #fde9ea,
-        inset 0 20px 110px #fde9ea, 0 0 90px #fff;
-    }
-    .shadow {
-      width: 90px;
-      height: 20px;
-      top: 78%;
-      animation: expand 5s infinite;
-    }
-  
-    @keyframes float {
-      0% {
-        transform: translatey(0px);
-      }
-      50% {
-        transform: translatey(-50px);
-      }
-      100% {
-        transform: translatey(0px);
-      }
-    }
+  .skills {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    grid-gap: 10px;
+   
+    background-color: #06283D ;
   }
-  @media screen and (max-width: 600px){
+  
+  .skills-title {
+    grid-row: 1;
+    text-align: center;
+  }
+  
+  .skills-title h1 {
+    /* font-family: var(--font-family); */
+    font-weight: 800;
+    color: #fff;
+    font-size: 50px;
+    line-height: 70.2px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  
+    margin-bottom: 3rem;
+  }
+  
+  
+  .skills-content {
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  .skills-icons {
+    flex: 1 1 1 200px;
     
-    .ball_img{
-        display: inline-block;
-        width: 25px;
-        height: 25px;        
-    }
-  
-    .skills .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
-      }
-      
-      .skills .col-lg-3 {
-        width: 20%;
-        margin-left: -20px;
-        
-      }
-      
-      .skills .col-lg-4 {
-        width: 33.33%;
-      }
-      .skills{
-        margin-right: -80px;
-        margin-top: 10px;
-      }
-      .postgres{
-        /* margin-right: 10px; */
-      }
-      .col-lg-4{
-        margin-left: -20px;
-      }
-    }
+    margin-top: 3rem;
+  }
   
-  .skill_img{
-    width: 50%;
-    height: 50%;
+  .skills-line {
+    height: 3px;
+    width: 5rem;
+    background-color: #FFF;
+    margin: 0.75rem 0;
   }
-  .dj{
-    max-width: 80%;
+  
+  .i_skill {
+    font-size: 40px;
   }
-  .skills{
-    margin-left: 100px;
-    margin-top: 20px;
+  @media screen and (max-width: 450px) {
+    .skills-title h1{
+      font-size: 36px;
+      line-height: 46.2px;
+      
+    }
   }
-  .postgres{
-    margin-left: 150px;
-  }
-
 
   /* END Skills */
 
-  /* Portfolio */
 
-  .portfolio_marging{
-    margin-left: 150px;
+ /* Portfolio */
+
+.p-media{
+  text-align: justify;
+  padding:0 10%;
+}
+.portfolio_padding {
+  padding: 10px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.h4_portfolio {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #F0ECE2;
+}
+.p_portfolio {
+  width: 400px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 14px;
+  color: #F0ECE2;
+}
+p.toggle {
+  display: none;
+}
+p.toggle.visible {
+  display: block;
+}
+.portfolio-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 2%;
+  width: 48%;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #F0ECE2;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  /* Add text-center class to center the image */
+  text-center: center;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* add this line */
+}
+
+.portfolio-item {
+  margin: 15px;
+  flex-basis: 40%; /* add this line */
+  max-width: 40%; /* add this line */
+}
+.img-port {
+  max-width: 80%;
+  height: auto;
+  border: 3px solid;
+  border-radius: 3%;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .portfolio_padding {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
-  .portfolio_padding{
-    padding: 10px 150px;
-  }
-  
-  .h4_portfolio{
-    margin-left: -180px;
-    width: 400px;
-    text-align: center;
-    color: #45505b;
+  .h4_portfolio {
+    width: 100%;
+    margin-bottom: 10px;
   }
   .p_portfolio {
-    
-    margin-left: -150px;
-    width: 400px;
-    text-align: justify;
-    font-size: 14px;
-    color: darkslategray;
+    width: 80%;
   }
-  p.toggle {
-    display: none;
+ 
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* add this line */
   }
-  p.toggle.visible {
-    display: block;
+
+  .portfolio-item {
+    margin: 15px;
+    flex-basis: 80%; /* change this line from 40% to 80% */
+    max-width: 80%; /* change this line from 40% to 80% */
   }
   .img-port{
-    width: 350px;
-    height: 200px;
-    border: #45505b 3px solid;
-    border-radius: 3%;
+    width: 100%;
+    height: auto;
   }
-  .port{
-    margin: 0 15%;
-    margin-bottom: 30px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #45505b;
-    font-family: "Raleway", sans-serif;
-    text-align: justify;
+  
+  /* Add styles to move portfolio-links below h4_portfolio */
+  .portfolio-links {
+    order: 3;
+    margin-top: 10px;
   }
-  @media screen and (max-width: 600px){
-    .p-media{
-        margin: 20PX 20px;
-        text-align: justify;
-    }
-    .portfolio-item{
-        margin-left: -20px;
-    }
-    .img-port{
-        width: 280px;
-        height: 120px;
-        /* justify-content: center; */
-        margin-left:15%; 
-    } 
-    .portfolio-links{
-        margin-left: 150px;
-        width: 80px;
-    }
-    p.toggle.visible{
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 12px;
-        text-align: justify;
-
-        /* margin:0 20px 15px; */
-    }
-    .portfolio_marging{
-        margin-left: -10px;
-      }
-      .portfolio_padding{
-        padding: 10px ;
-      }
-      .h4_portfolio{
-        margin-left: 0px;
-      }
-      .p_portfolio{
-        width: 300px;
-      }
-  }
-
-  /* END portfolio */
+}
+/* END portfolio */
 
   /* Contact */
   .contact .info {
@@ -458,7 +461,7 @@ p{
   }
   
   .contact-links{
-    /* position: absolute; */
+   
     margin-left: 10px;
   }
   .emailme{
@@ -613,4 +616,6 @@ p{
     font-weight: 500;
 }
 
-  
+  }  
+
+ 
