@@ -31,7 +31,7 @@ body{
     font-family: "Open Sans", sans-serif;
     /* color: var(--color-bg); */
     background-color:var(--color-bg);
-    /* margin: 0px; */
+    margin: 0px;
     /* z-index: -1; */
 }
 
@@ -56,11 +56,11 @@ a {
   text-decoration: none;
 }
 
-  /* section  {
+  section  {
     padding: 5px 2px;
     overflow: hidden;
-  } */
-  
+  }
+   
   .section-title {
     text-align: center;
     letter-spacing: 0.07rem;
@@ -183,23 +183,7 @@ a {
     p{
         font-size: 12px;
     }
-    /* .name{
-        display: block;
-        position: absolute;
-    
-        margin-left: 10px;
-        margin-top: -200px;
-    } */
-     .image .my_pic {
-        /* margin-top: 150px ;
-        margin-left: 40px;
-        position: relative;
-        display: flex; */
-        /* justify-content: center; */
-        /* width: 220px; */
-        /* height: auto; */
-        
-    }
+   
   }
 
    /* About */
