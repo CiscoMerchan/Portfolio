@@ -382,8 +382,10 @@ p{
 
  /* Portfolio */
  .card-container {
-  width: 450px;
-  height: 800px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .p_text {
