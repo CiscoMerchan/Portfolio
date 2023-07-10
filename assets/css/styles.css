@@ -52,6 +52,10 @@ p{
     font-family: "Raleway", sans-serif;
     line-height: 1.7;
   }
+a {
+  text-decoration: none;
+}
+
   /* section  {
     padding: 5px 2px;
     overflow: hidden;
@@ -242,7 +246,7 @@ p{
   
   
  /* Resume */
- #resume-btn {
+ .resume-btn {
   
     display:flex;
     justify-content: center;
@@ -262,17 +266,21 @@ p{
     margin-top: 20px;
     height: 50px;
   }
+  .resume-btn a{
+    color: var(--color-title);
+    text-align: center;
+  }
   
-  #resume-btn:hover {
+  .resume-btn:hover {
     background-color: #BDCDD6;
     color:#06283D;
     font-size: 1.4em;
   }
-  @media screen and (max-width: 600px){
-    #resume-btn{
-       
+  /* @media screen and (max-width: 600px){
+    .resume-btn{
+       margin-bottom: 3rem;
     }
-  }
+  } */
 
   /* END About */
 
