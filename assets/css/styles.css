@@ -96,30 +96,86 @@ a {
 /* navbar */
 .navbar{
   background-color: var(--color-bg);
+  color: var(--color-title);
 }
+
+.navbar-toggler:hover{
+  cursor:pointer;
+}
+
 .nav-title{
     margin-left: 20px;
     font-family:"Raleway", sans-serif;
     font-weight: 800;
+    
+    
     
 }
 .nav-items{
     margin-right: 25px;
     font-family:"Raleway", sans-serif;
     font-weight: 500;
+    cursor: pointer; 
 }
-.nav-item  .nav-link:hover{
-  background-color: #BDCDD6;
-  color:#F9F5EB;
+
+.nav-link{
+  color: var(--color-title) !important;
+  margin-right: 25px;
+  font-family:"Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer; 
+} 
+.nav-item:hover{
+  background-color: var(--color-title);
+  padding-left: 2rem;
+}
+.nav-link:hover{
+  color: var(--color-bg) !important;
+  font-weight: 900;
   
 }
-@media screen and (max-width: 600px){
-   .nav-link{
-    background-color: #BDCDD6;
-    color:#F9F5EB;
+/* Last adjustment to NAV */
+/* .navbar-nav .nav-link{
     
-  }
+  color: var(--color-title);
+} */
+.navbar-brand{
+  margin-left: 2rem;
+  color: var(--color-title);
+  font-family:"Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 37px;
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+      margin-right: auto;
+      margin-left: 10px;
+  }
+  .navbar-nav {
+      margin-left: auto;
+  }
+
+.nav-title{
+  margin-left: 24px;
+  font-family:"Raleway", sans-serif;
+  font-weight: 900;
+  
+}
+.nav-items{
+  margin-right: 25px;
+  font-family:"Raleway", sans-serif;
+  font-weight: 500;
+  cursor:pointer;
+}
+
+}  
+
 /* Home */
 .home{
   display: flex;
@@ -714,49 +770,4 @@ h3 {
   }
 
   /* END Footer */
-  /* Last adjustment to NAV */
-  .navbar-nav .nav-link{
-    
-    color: #45505b !important;
-}
-.navbar-brand{
-    margin-left: 20px;
-    color: #45505b !important;
-    font-family:"Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-}
-.nav-link{
-    color: #45505b;
-    margin-right: 25px;
-    font-family:"Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}      
-
-  @media only screen and (max-width: 600px) {
-    .navbar-brand {
-        margin-right: auto;
-        margin-left: 10px;
-    }
-    .navbar-nav {
-        margin-left: auto;
-    }
-    .navbar-nav .nav-link{
-    
-        color: #45505b !important;
-} 
-.nav-title{
-    margin-left: 20px;
-    font-family:"Raleway", sans-serif;
-    font-weight: 800;
-    
-}
-.nav-items{
-    margin-right: 25px;
-    font-family:"Raleway", sans-serif;
-    font-weight: 500;
-}
-
-  }  
-
+  
