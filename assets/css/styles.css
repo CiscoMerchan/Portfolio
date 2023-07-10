@@ -210,7 +210,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .name h1 {
@@ -235,11 +235,26 @@ section {
     flex-direction: column-reverse;
     gap: 2rem;
     padding: 2rem 0 5rem 0;
-    /* height: 500px; */
+    
+  }
+
+  .img {
+    width: 350px;
   }
 
   p {
     font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .img {
+    width: 280px;
+  }
+
+  .name h1 {
+    text-align:center;
   }
 
 }
