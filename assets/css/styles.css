@@ -434,14 +434,15 @@ a {
 
 .online_btn{
   width: 80px;
-  height: 40px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items:center;
   border: 2px solid var(--color-blue);
   border-radius: 0.25rem;
-  margin-right: 2rem;
-  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  
+  
 
 }
 
