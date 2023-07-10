@@ -517,12 +517,12 @@ p.toggle.visible {
 .contact-title {
  grid-row: 1;
  text-align: center;
-}
+} 
 
 .contact-title h1{
   /* font-family: var(--font-family); */
   font-weight: 800;
-  color: var(--color-bg);
+  color: var(--color-title);
   font-size: 50px;
   line-height: 70.2px;
   letter-spacing: 0.04em;
