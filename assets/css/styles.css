@@ -297,7 +297,7 @@ a {
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1.2em;
-    cursor: pointer;
+    cursor: pointer !important;
     
     margin: 3Rem 6rem;
     border: 3px solid;
