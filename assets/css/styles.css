@@ -68,6 +68,47 @@ a {
   text-decoration: none;
 }
 
+.arrow_up-dk {
+  /* width: 60px; */
+  display: inline-block;
+  margin-left: 94%;
+  cursor: pointer;
+  
+}
+.arrow_up-dk i {
+  /* width: 60px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* font-family: var(--font-family); */
+  text-transform: capitalize ;
+  color: var(--color-title);
+  padding: 10px;
+  border: 2px solid var(--color-title);
+  border-radius: 100%;
+}
+.arrow_up-lg {
+  /* width: 60px; */
+  display: inline-block;
+  margin-left: 94%;
+  cursor: pointer;
+  
+}
+.arrow_up-lg i {
+  /* width: 60px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* font-family: var(--font-family); */
+  text-transform: capitalize ;
+  color: var(--color-bg);
+  padding: 10px;
+  border: 2px solid var(--color-bg);
+  border-radius: 100%;
+}
+
 section {
   padding: 5px 2px;
   overflow: hidden;
@@ -370,7 +411,9 @@ section {
 }
 
 /* // Skill */
-
+#skills {
+  background-color: var(--color-title);
+}
 .skills {
   display: grid;
   grid-template-rows: auto 1fr;
