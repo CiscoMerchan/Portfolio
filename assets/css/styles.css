@@ -482,6 +482,13 @@ section {
   color: #fff;
 }
 
+@media (min-width: 1350px) {
+  .row-cols-lg-3 .col {
+    flex: 0 0 33.33%; /* 3 columns above 1350px */
+    max-width: 33.33%;
+  }
+}
+
 @media (max-width: 1350px) {
   .row-cols-md-2 .col {
     flex: 0 0 50%; /* 2 columns below 1350px */
