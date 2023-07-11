@@ -351,6 +351,12 @@ section {
   font-size: 1.4em;
 }
 
+@media screen and (max-width: 390px) {
+  .resume-btn {
+    padding: 2rem ;
+  }
+}
+
 /* // card */
 .skillCard {
   height: 40px;
