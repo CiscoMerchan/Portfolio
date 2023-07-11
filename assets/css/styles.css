@@ -351,6 +351,12 @@ section {
   font-size: 1.4em;
 }
 
+@media screen and (max-width: 390px) {
+  .resume-btn {
+    padding: 2rem ;
+  }
+}
+
 /* // card */
 .skillCard {
   height: 40px;
@@ -481,6 +487,7 @@ section {
   background-color: var(--color-blue);
   color: #fff;
 }
+
 
 @media (min-width: 1350px) {
   .row-cols-lg-3 .col {
